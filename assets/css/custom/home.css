@@ -1,0 +1,121 @@
+/* ESTILO.CSS */
+#caixaconteudo{ margin-left: 8%; margin-right: 8%; padding:10px 10px;}
+#textoalinhado{ margin-left: 8%; font-weight: bold;}
+#textoalinhado2{ margin-left: 8%; font-weight: bold; color: #d5a827; margin-bottom: 0; }
+#conteudo{padding:80px 20px; flex: 1 0 auto; height: 800px;}
+#divlinks{width: 20%; height: 20%; text-align: center;}
+#divlinks a{font-weight: 800; font-size: 20px; color: #d5a827;}
+#divlinks p{font-weight: 500;color: black; font-size: 15px;}
+#bodyhome{background: rgb(244, 244, 244);}
+
+iframe{max-width: 85%; max-height:auto; }
+
+/* Estilos do Carousel */
+#carouselExampleCaptions{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000; /* Fundo preto para evitar flashes brancos */
+}
+
+.carousel {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    background-color: #000; /* Fundo preto para container */
+}
+
+.carousel-inner {
+    background-color: #000; /* Fundo preto para o inner */
+    position: relative;
+}
+
+.carousel-item {
+    background-color: #000; /* Fundo preto para cada item */
+    transition: transform 0.6s ease-in-out; /* Transição mais suave */
+    position: relative;
+}
+
+/* Efeito fade suave para transições */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active.carousel-item-left,
+.carousel-fade .carousel-item.active.carousel-item-right {
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-image {
+    height: 600px; /* Altura fixa */
+    object-fit: cover; /* Mantém proporção sem distorção */
+    object-position: center; /* Centraliza a imagem */
+    width: 100%;
+    display: block; /* Garante que seja um elemento de bloco */
+    background-color: #000; /* Fundo preto como fallback */
+}
+
+/* Melhora os controles do carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduz a área clicável */
+    background: rgba(0,0,0,0.3); /* Fundo semi-transparente */
+    border: none;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0,0,0,0.5); /* Escurece no hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 20px 20px; /* Ícones menores */
+}
+
+/* Melhora os indicadores */
+.carousel-indicators {
+    bottom: 10px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255,255,255,0.5);
+    border: 2px solid rgba(255,255,255,0.8);
+}
+
+.carousel-indicators .active {
+    background-color: rgba(255,255,255,0.9);
+}
+
+/* Melhora as legendas */
+.carousel-caption {
+    background: rgba(0,0,0,0.7); /* Fundo semi-transparente */
+    border-radius: 5px;
+    padding: 20px;
+    bottom: 50px; /* Posição mais alta */
+}
+
+.carousel-caption h5 {
+    color: #d5a827; /* Cor dourada para títulos */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    color: #ffffff;
+    margin-bottom: 0;
+}
